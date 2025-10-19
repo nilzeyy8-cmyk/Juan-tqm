@@ -3,467 +3,346 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Quieres ser?</title>
+    <title>Para Juanpi - ¡Te quiero mucho!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
     <style>
-    body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #ffffff;
-    }
-
-    .container {
-        text-align: center;
-    }
-
-    #gifContainerImg {
-        width: 60%;
-        height: 60%;
-    }
-
-    button {
-        padding: 10px 20px;
-        font-size: 16px;
-        margin: 10px;
-        cursor: pointer;
-    }
-    #siBtn {
-        padding: 10px 20px; 
-        font-size: 16px;
-        margin: 10px;
-        cursor: pointer;
-        background-color: #009705; /* Verde */
-        color: white;
-        border: 2px solid #FFC0CB; /* Bordes rosa */
-        border-radius: 10px; /* Esquinas redondeadas */
-    }
-
-    #noBtn {
-        padding: 10px 20px;
-        font-size: 16px;
-        margin: 10px;
-        cursor: pointer;
-        background-color: #FF5733; /* Rojo */
-        color: white;
-        border: 2px solid #FFC0CB; /* Bordes rosa */
-        border-radius: 10px; /* Esquinas redondeadas */
-    }
-    #noBtn span {
-        font-size: 18px;
-        color: #fcf4f4; /* Cambia el color del texto según tus preferencias */
-        /* Otras propiedades de estilo aquí */
-    }
-
-    #siBtn:hover{
-        background-color: #053a03; /* Cambia a otro color en hover, puedes ajustar el valor según tus preferencias */
-    }
-    #noBtn:hover {
-        background-color: #641e0d; /* Cambia a otro color en hover, puedes ajustar el valor según tus preferencias */
-    }
-    .bg-green {
-        background-color: #ffffff; /* Nuevo color de fondo verde */
-    }
-
-    #messageContainer {
-        font-size: 30px;
-        color: #FF0000; /* Color rojo */
-        font-family: 'YourDesiredFont', sans-serif; /* Reemplaza 'YourDesiredFont' con la fuente que desees */
-        text-shadow: 2px 2px 4px #000; /* Borde simulado */
-        animation: pulse 0.5s infinite alternate; /* Animación de palpitación más rápida */
-    }
-
-    @keyframes pulse {
-        from {
-            transform: scale(1);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        to {
-            transform: scale(1.3); /* Zoom más grande */
+        
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #f5c3ff 0%, #a1c4fd 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
         }
-    }
+        
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.92);
+            border-radius: 25px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            color: #ff6b8b;
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            color: #5a67d8;
+            margin-bottom: 30px;
+        }
+        
+        .message-container {
+            background: linear-gradient(135deg, #fff9c4 0%, #bbdefb 100%);
+            border-radius: 20px;
+            padding: 25px;
+            margin: 25px 0;
+            min-height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            line-height: 1.6;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+            border: 2px dashed #ff9e9e;
+        }
+        
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .btn {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            border: none;
+            border-radius: 50px;
+            padding: 14px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #5a3d5c;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn:active {
+            transform: translateY(-2px);
+        }
+        
+        .kittens-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .kitten-card {
+            width: 180px;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .kitten-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .kitten-img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        
+        .kitten-caption {
+            padding: 10px;
+            font-size: 0.9rem;
+            color: #5a3d5c;
+        }
+        
+        .hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ff6b8b"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>') no-repeat;
+            background-size: contain;
+            opacity: 0;
+            animation: float 8s infinite linear;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        .footer {
+            margin-top: 30px;
+            font-size: 1.2rem;
+            color: #ff6b8b;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .message-container {
+                font-size: 1.2rem;
+                min-height: 150px;
+            }
+            
+            .btn {
+                padding: 12px 20px;
+                font-size: 1rem;
+            }
+        }
+        
+        .special-effect {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
     </style>
 </head>
 <body>
+    <div class="hearts" id="hearts"></div>
+    
     <div class="container">
+        <h1>Para Juanpi ❤️</h1>
+        <p class="subtitle">Espero que te recuperes pronto de esa fiebre</p>
         
-        <div id="gifContainer">
-            <img id="gifContainerImg" src="https://i.pinimg.com/736x/14/d1/93/14d193eb4a0c4010b0728d32a79b2d94.jpg" alt="Imagen Inicial" >
-        </div>
-        <div id="happyGifContainer" style="display: none;">
-            <img src="https://github.com/Ronald1234-2/musica/blob/main/mocha5final.gif?raw=true" alt="Ositos Felices" style="width: 100%; height: 100%;">
-        </div>
-        <div id="happyGifContainer2" style="display: none;">
-            <img src="https://github.com/Ronald1234-2/musica/blob/main/mocha6final.gif?raw=true" alt="Ositos Felices" style="width: 100%; height: 100%;">
-        </div>
-        <div id="happyGifContainer3" style="display: none;">
-            <img src="https://github.com/Ronald1234-2/musica/blob/main/mocha7final.gif?raw=true" alt="Ositos Felices" style="width: 100%; height: 100%;">
-        </div>
-        <div id="happyGifContainer4" style="display: none;">
-            <img src="https://github.com/Ronald1234-2/musica/blob/main/mocha9final.gif?raw=true" alt="Ositos Felices" style="width: 100%; height: 100%;">
-        </div>
-        <div id="sadGifContainer" style="display: none;">
-            <img src="https://github.com/Ronald1234-2/musica/blob/main/mocha2.gif?raw=true" alt="Osito Triste" style="width: 80%; height: 80%;">
-        </div>
-        <div id="sadGifContainer1" style="display: none;">
-            <img src="https://github.com/Ronald1234-2/musica/blob/main/mocha3.gif?raw=true" alt="Osito Triste" style="width: 80%; height: 80%;">
-        </div>
-        <div id="sadGifContainer2" style="display: none;">
-            <img src="https://github.com/Ronald1234-2/musica/blob/main/mocha4.gif?raw=true" alt="Osito Triste" style="width: 80%; height: 80%;">
+        <div class="message-container" id="message">
+            Haz clic en los botones para ver mis mensajes para ti
         </div>
         
-    <h1 id="question">¿Tú me quieres?</h1>
-        <div id="messageContainer" style="display: none;"></div>
-
-    <button id="siBtn">Sí, te quiero</button>
-    <button id="noBtn">No, no te quiero</button>
+        <div class="buttons-container">
+            <button class="btn" onclick="showMessage(0)">💝 Mensaje de ánimo</button>
+            <button class="btn" onclick="showMessage(1)">😘 Cuánto te quiero</button>
+            <button class="btn" onclick="showMessage(2)">🌟 Deseos de recuperación</button>
+            <button class="btn" onclick="showMessage(3)">💌 Mensaje especial</button>
+            <button class="btn" onclick="showRandomKitten()">🐱 Gatito sorpresa</button>
+        </div>
         
+        <div class="kittens-container" id="kittens">
+            <!-- Las imágenes de gatitos se agregarán aquí -->
+        </div>
+        
+        <div class="footer">
+            Con todo mi cariño para ti, Juanpi
+        </div>
     </div>
+
     <script>
-    // Script solicitado
-    let noButtonClickCount = 0; // Contador para el botón "No"
-    let noButtonState = 0; // Estado actual del botón "No"
-
-    // Mostrar el gif inicial
-    document.getElementById('gifContainer').style.display = 'block';
-
-    document.getElementById('siBtn').addEventListener('click', function() {
-        // Ocultar todos los gifs e imágenes
-        document.getElementById('sadGifContainer').style.display = 'none';
-        document.getElementById('sadGifContainer1').style.display = 'none';
-        document.getElementById('sadGifContainer2').style.display = 'none';
-        document.getElementById('gifContainer').style.display = 'none';
-        document.getElementById('happyGifContainer').style.display = 'none';
-        document.getElementById('happyGifContainer2').style.display = 'none';
-        document.getElementById('happyGifContainer3').style.display = 'none';
-        document.getElementById('happyGifContainer4').style.display = 'none';
-        // Ocultar imágenes personalizadas si existen
-        let customSadImg = document.getElementById('customSadImg');
-        if (customSadImg) customSadImg.style.display = 'none';
-        let customSadImg2 = document.getElementById('customSadImg2');
-        if (customSadImg2) customSadImg2.style.display = 'none';
-        let customSadImg3 = document.getElementById('customSadImg3');
-        if (customSadImg3) customSadImg3.style.display = 'none';
-        let customSadImg4 = document.getElementById('customSadImg4');
-        if (customSadImg4) customSadImg4.style.display = 'none';
-        let customSadImg5 = document.getElementById('customSadImg5');
-        if (customSadImg5) customSadImg5.style.display = 'none';
-        let customSadImg6 = document.getElementById('customSadImg6');
-        if (customSadImg6) customSadImg6.style.display = 'none';
-
-        // Ocultar los botones y pregunta
-        document.getElementById('question').style.display = 'none';
-        document.getElementById('siBtn').style.display = 'none';
-        document.getElementById('noBtn').style.display = 'none';
-        document.body.classList.add('bg-green');
-
-        // Mostrar el mensaje específico
-        document.getElementById('messageContainer').style.display = 'block';
-        document.getElementById('messageContainer').innerHTML = '¡Lo sabía, Yo también te quiero mucho!';
-
-        // Insertar el gif si no existe
-        let gifContainerFinal = document.getElementById('gifContainerFinal');
-        if (!gifContainerFinal) {
-            gifContainerFinal = document.createElement('div');
-            gifContainerFinal.id = 'gifContainerFinal';
-            gifContainerFinal.style.marginTop = '20px';
-            gifContainerFinal.style.display = 'flex';
-            gifContainerFinal.style.justifyContent = 'center';
-            gifContainerFinal.style.alignItems = 'center';
-            let gif = document.createElement('img');
-            gif.src = 'https://i.pinimg.com/originals/88/14/9b/88149b0400750578f4d07d9bc3fb0fee.gif';
-            gif.alt = 'Celebración';
-            gif.style.maxWidth = '80%';
-            gif.style.maxHeight = '400px';
-            gifContainerFinal.appendChild(gif);
-            document.querySelector('.container').appendChild(gifContainerFinal);
-        } else {
-            gifContainerFinal.style.display = 'flex';
+        // Mensajes personales de apoyo para Juanpi
+        const messages = [
+            "Juanpi, sé que eres fuerte y vas a superar esta fiebre pronto. Estoy contigo en cada momento y te mando toda mi energía positiva.",
+            "Quiero que sepas que te quiero muchísimo y estoy preocupado por ti. Eres muy importante para mí y deseo que te mejores pronto.",
+            "Espero con todo mi corazón que te recuperes rápidamente. Mientras tanto, descansa mucho y piensa en cosas bonitas. Estoy aquí para lo que necesites.",
+            "Eres una persona increíble, Juanpi, y esta fiebre es solo un mal momento que pronto pasará. Te envío un abrazo muy fuerte y mis mejores deseos.",
+            "Aunque ahora no te sientas bien, quiero recordarte lo especial que eres para mí. Esta fiebre se irá pronto y volverás a estar como nuevo.",
+            "Juanpi, cada día que pasa es un día más cerca de tu recuperación completa. Te quiero mucho y estoy contigo en esto.",
+            "Mando un abrazo virtual muy fuerte para ti, mi querido Juanpi. Que la fiebre se vaya pronto y vuelvas a estar lleno de energía.",
+            "Eres mi persona favorita y ver que estás enfermo me duele mucho. Por favor, recupérate pronto. Te quiero con todo mi corazón."
+        ];
+        
+        // URLs de imágenes de gatitos
+        const kittenImages = [
+            {url: "https://placekitten.com/300/200", caption: "Este gatito te manda buenas vibras"},
+            {url: "https://placekitten.com/301/201", caption: "Mira qué tierno, como tú"},
+            {url: "https://placekitten.com/302/202", caption: "Un gatito que te quiere ver mejor"},
+            {url: "https://placekitten.com/303/203", caption: "Los gatitos también te apoyan"},
+            {url: "https://placekitten.com/304/204", caption: "Tan adorable como tú, Juanpi"},
+            {url: "https://placekitten.com/305/205", caption: "Este gatito te desea pronta recuperación"}
+        ];
+        
+        // Función para mostrar mensajes
+        function showMessage(index) {
+            const messageElement = document.getElementById('message');
+            messageElement.textContent = messages[index];
+            messageElement.classList.add('special-effect');
+            
+            // Quitar la clase después de la animación
+            setTimeout(() => {
+                messageElement.classList.remove('special-effect');
+            }, 2000);
+            
+            // Agregar corazones flotantes
+            createHearts(5);
         }
-    });
-
-    document.getElementById('noBtn').addEventListener('click', function() {
-        switch (noButtonState) {
-            case 0:
-                // Primera vez haciendo clic en "No"
-                document.getElementById('happyGifContainer').style.display = 'none';
-                document.getElementById('gifContainer').style.display = 'none';
-                // Mostrar la nueva imagen en vez del gif triste
-                let customSadImg = document.getElementById('customSadImg');
-                if (!customSadImg) {
-                    customSadImg = document.createElement('img');
-                    customSadImg.id = 'customSadImg';
-                    customSadImg.src = 'https://i.pinimg.com/736x/f3/e9/42/f3e942f6686b67191daa439a70342e18.jpg';
-                    customSadImg.alt = 'Triste personalizado';
-                    customSadImg.style.width = '80%';
-                    customSadImg.style.height = '80%';
-                    customSadImg.style.display = 'block';
-                    customSadImg.style.margin = '0 auto';
-                    document.querySelector('.container').insertBefore(customSadImg, document.getElementById('happyGifContainer'));
-                } else {
-                    customSadImg.style.display = 'block';
-                }
-                document.getElementById('sadGifContainer').style.display = 'none';
-
-                // Modificar el botón "No"
-                document.getElementById('noBtn').innerHTML = '¿De verdad no me quieres?';
-                document.getElementById('noBtn').style.backgroundColor = '#F1330A';
-                document.getElementById('siBtn').style.fontSize = '40px';
-                document.getElementById('siBtn').style.padding = '20px 40px';
-                noButtonClickCount++;
-                noButtonState++;
-                break;
-
-            case 1:
-                // Segunda vez haciendo clic en "No"
-                document.getElementById('noBtn').innerHTML = '¿Seguro que no sientes nada por mí?';
-                document.getElementById('noBtn').style.backgroundColor = '#F1330A';
-                // Ocultar la imagen personalizada si existe
-                let customSadImg1 = document.getElementById('customSadImg');
-                if (customSadImg1) customSadImg1.style.display = 'none';
-                // Mostrar la nueva imagen como segunda
-                let customSadImg2 = document.getElementById('customSadImg2');
-                if (!customSadImg2) {
-                    customSadImg2 = document.createElement('img');
-                    customSadImg2.id = 'customSadImg2';
-                    customSadImg2.src = 'https://i.pinimg.com/736x/36/e3/31/36e3313665a545a42f80a694fcb8c07e.jpg';
-                    customSadImg2.alt = 'Triste personalizado 2';
-                    customSadImg2.style.width = '80%';
-                    customSadImg2.style.height = '80%';
-                    customSadImg2.style.display = 'block';
-                    customSadImg2.style.margin = '0 auto';
-                    document.querySelector('.container').insertBefore(customSadImg2, document.getElementById('happyGifContainer'));
-                } else {
-                    customSadImg2.style.display = 'block';
-                }
-                document.getElementById('sadGifContainer').style.display = 'none';
-                document.getElementById('sadGifContainer2').style.display = 'none';
-                document.getElementById('siBtn').style.fontSize = '50px';
-                document.getElementById('siBtn').style.padding = '30px 50px';
-                noButtonState++;
-                break;
-
-            case 2:
-                document.getElementById('noBtn').innerHTML = '¿Nunca has sentido algo bonito por mí?';
-                document.getElementById('noBtn').style.backgroundColor = '#F1330A';
-                // Ocultar la segunda imagen personalizada si existe
-                let customSadImg2b = document.getElementById('customSadImg2');
-                if (customSadImg2b) customSadImg2b.style.display = 'none';
-                // Mostrar imagen personalizada en vez del gif triste
-                let customSadImg3 = document.getElementById('customSadImg3');
-                if (!customSadImg3) {
-                    customSadImg3 = document.createElement('img');
-                    customSadImg3.id = 'customSadImg3';
-                    customSadImg3.src = 'https://i.pinimg.com/736x/bd/bc/e1/bdbce1fec8939f851c2a9ec9d1869223.jpg';
-                    customSadImg3.alt = 'Triste personalizado 3';
-                    customSadImg3.style.width = '80%';
-                    customSadImg3.style.height = '80%';
-                    customSadImg3.style.display = 'block';
-                    customSadImg3.style.margin = '0 auto';
-                    document.querySelector('.container').insertBefore(customSadImg3, document.getElementById('happyGifContainer'));
-                } else {
-                    customSadImg3.style.display = 'block';
-                }
-                document.getElementById('sadGifContainer').style.display = 'none';
-                document.getElementById('sadGifContainer2').style.display = 'none';
-                document.getElementById('sadGifContainer1').style.display = 'none';
-                document.getElementById('siBtn').style.fontSize = '60px';
-                document.getElementById('siBtn').style.padding = '40px 60px';
-                noButtonState++;
-                break;
-
-            case 3:
-                document.getElementById('noBtn').innerHTML = 'Quiereme!!!';
-                document.getElementById('noBtn').style.backgroundColor = '#F1330A';
-                // Ocultar la tercera imagen personalizada si existe
-                let customSadImg3b = document.getElementById('customSadImg3');
-                if (customSadImg3b) customSadImg3b.style.display = 'none';
-                // Mostrar la nueva imagen personalizada para este estado
-                let customSadImg4 = document.getElementById('customSadImg4');
-                if (!customSadImg4) {
-                    customSadImg4 = document.createElement('img');
-                    customSadImg4.id = 'customSadImg4';
-                    customSadImg4.src = 'https://i.pinimg.com/736x/ab/1c/9d/ab1c9d94a987df1b82778787db7add5b.jpg';
-                    customSadImg4.alt = 'Triste personalizado 4';
-                    customSadImg4.style.width = '80%';
-                    customSadImg4.style.height = '80%';
-                    customSadImg4.style.display = 'block';
-                    customSadImg4.style.margin = '0 auto';
-                    document.querySelector('.container').insertBefore(customSadImg4, document.getElementById('happyGifContainer'));
-                } else {
-                    customSadImg4.style.display = 'block';
-                }
-                document.getElementById('siBtn').style.fontSize = '70px';
-                document.getElementById('siBtn').style.padding = '50px 70px';
-                noButtonState++;
-                break;
-
-            case 4:
-                document.getElementById('noBtn').innerHTML = '¿Por qué no me quieres?';
-                document.getElementById('noBtn').style.backgroundColor = '#F1330A';
-                // Ocultar la cuarta imagen personalizada si existe
-                let customSadImg4b = document.getElementById('customSadImg4');
-                if (customSadImg4b) customSadImg4b.style.display = 'none';
-                // Mostrar la imagen hasta que se terminen los textos
-                let customSadImg5 = document.getElementById('customSadImg5');
-                if (!customSadImg5) {
-                    customSadImg5 = document.createElement('img');
-                    customSadImg5.id = 'customSadImg5';
-                    customSadImg5.src = 'https://i.pinimg.com/736x/75/cb/c9/75cbc900c36f16ab7c201cb220314513.jpg';
-                    customSadImg5.alt = 'Triste personalizado 5';
-                    customSadImg5.style.width = '80%';
-                    customSadImg5.style.height = '80%';
-                    customSadImg5.style.display = 'block';
-                    customSadImg5.style.margin = '0 auto';
-                    document.querySelector('.container').insertBefore(customSadImg5, document.getElementById('happyGifContainer'));
-                } else {
-                    customSadImg5.style.display = 'block';
-                }
-                document.getElementById('siBtn').style.fontSize = '80px';
-                document.getElementById('siBtn').style.padding = '60px 80px';
-                noButtonState++;
-                break;
-            case 5:
-                document.getElementById('noBtn').innerHTML = '¿Nunca te he hecho sentir especial?';
-                document.getElementById('noBtn').style.backgroundColor = '#F1330A';
-                // Ocultar la imagen anterior (customSadImg5)
-                let customSadImg5b = document.getElementById('customSadImg5');
-                if (customSadImg5b) customSadImg5b.style.display = 'none';
-                // Mostrar la nueva imagen desde la sexta vez
-                let customSadImg6 = document.getElementById('customSadImg6');
-                if (!customSadImg6) {
-                    customSadImg6 = document.createElement('img');
-                    customSadImg6.id = 'customSadImg6';
-                    customSadImg6.src = 'https://i.pinimg.com/736x/3a/00/27/3a00279127895a7910fd907b7395a5c9.jpg';
-                    customSadImg6.alt = 'Triste personalizado 6';
-                    customSadImg6.style.width = '80%';
-                    customSadImg6.style.height = '80%';
-                    customSadImg6.style.display = 'block';
-                    customSadImg6.style.margin = '0 auto';
-                    document.querySelector('.container').insertBefore(customSadImg6, document.getElementById('happyGifContainer'));
-                } else {
-                    customSadImg6.style.display = 'block';
-                }
-                document.getElementById('siBtn').style.fontSize = '90px';
-                document.getElementById('siBtn').style.padding = '70px 90px';
-                noButtonState++;
-                break;
-            case 6:
-                document.getElementById('noBtn').innerHTML = '¿Ni un abrazo te gustaría darme?';
-                document.getElementById('noBtn').style.backgroundColor = '#F1330A';
-                // Mantener la nueva imagen visible
-                let customSadImg6b = document.getElementById('customSadImg6');
-                if (customSadImg6b) customSadImg6b.style.display = 'block';
-                document.getElementById('siBtn').style.fontSize = '100px';
-                document.getElementById('siBtn').style.padding = '80px 100px';
-                noButtonState++;
-                break;
-            case 7:
-                document.getElementById('noBtn').innerHTML = '¿Ni un te quiero pequeñito?';
-                document.getElementById('noBtn').style.backgroundColor = '#F1330A';
-                // Mantener la nueva imagen visible
-                let customSadImg6c = document.getElementById('customSadImg6');
-                if (customSadImg6c) customSadImg6c.style.display = 'block';
-                document.getElementById('siBtn').style.fontSize = '120px';
-                document.getElementById('siBtn').style.padding = '90px 120px';
-                noButtonState++;
-                break;
-            case 8:
-                document.getElementById('noBtn').innerHTML = 'Esta bien, lo entiendo....';
-                document.getElementById('noBtn').style.backgroundColor = '#F1330A';
-                // Mantener la nueva imagen visible
-                let customSadImg6d = document.getElementById('customSadImg6');
-                if (customSadImg6d) customSadImg6d.style.display = 'block';
-                document.getElementById('siBtn').style.fontSize = '140px';
-                document.getElementById('siBtn').style.padding = '100px 140px';
-                noButtonState++;
-                break;
-            case 9:
-                document.getElementById('noBtn').innerHTML = 'Mentira, tu si me quieres!!';
-                document.getElementById('noBtn').style.backgroundColor = '#F1330A';
-                // Mantener la nueva imagen visible
-                let customSadImg6e = document.getElementById('customSadImg6');
-                if (customSadImg6e) customSadImg6e.style.display = 'block';
-                document.getElementById('siBtn').style.fontSize = '160px';
-                document.getElementById('siBtn').style.padding = '110px 160px';
-                noButtonState++;
-                break;
-            case 10:
-                document.getElementById('noBtn').innerHTML = 'quiereme aunque sea un poquito';
-                document.getElementById('noBtn').style.backgroundColor = '#F1330A';
-                // Mantener la nueva imagen visible
-                let customSadImg6f = document.getElementById('customSadImg6');
-                if (customSadImg6f) customSadImg6f.style.display = 'block';
-                document.getElementById('siBtn').style.fontSize = '180px';
-                document.getElementById('siBtn').style.padding = '120px 180px';
-                noButtonState++;
-                break;
-            case 11:
-                document.getElementById('noBtn').innerHTML = '¿De verdad no :c?';
-                document.getElementById('noBtn').style.backgroundColor = '#F1330A';
-                let customSadImg6g = document.getElementById('customSadImg6');
-                if (customSadImg6g) customSadImg6g.style.display = 'block';
-                document.getElementById('siBtn').style.fontSize = '200px';
-                document.getElementById('siBtn').style.padding = '130px 200px';
-                noButtonState++;
-                break;
-            case 12:
-                document.getElementById('noBtn').innerHTML = '¿Ni un poquito de ternura para mí?';
-                document.getElementById('noBtn').style.backgroundColor = '#F1330A';
-                let customSadImg6h = document.getElementById('customSadImg6');
-                if (customSadImg6h) customSadImg6h.style.display = 'block';
-                document.getElementById('siBtn').style.fontSize = '220px';
-                document.getElementById('siBtn').style.padding = '140px 220px';
-                noButtonState++;
-                break;
-            case 13:
-                document.getElementById('noBtn').innerHTML = '¿Nunca me has querido ni tantito?';
-                document.getElementById('noBtn').style.backgroundColor = '#F1330A';
-                let customSadImg6i = document.getElementById('customSadImg6');
-                if (customSadImg6i) customSadImg6i.style.display = 'block';
-                document.getElementById('siBtn').style.fontSize = '240px';
-                document.getElementById('siBtn').style.padding = '150px 240px';
-                noButtonState++;
-                break;
-            case 14:
-                document.getElementById('noBtn').innerHTML = '¿Ni una oportunidad para tu corazón?';
-                document.getElementById('noBtn').style.backgroundColor = '#F1330A';
-                let customSadImg6j = document.getElementById('customSadImg6');
-                if (customSadImg6j) customSadImg6j.style.display = 'block';
-                document.getElementById('siBtn').style.fontSize = '260px';
-                document.getElementById('siBtn').style.padding = '160px 260px';
-                noButtonState++;
-                break;
-            case 15:
-                document.getElementById('noBtn').innerHTML = '¿Ni un sí chiquito para mí?';
-                document.getElementById('noBtn').style.backgroundColor = '#F1330A';
-                let customSadImg6k = document.getElementById('customSadImg6');
-                if (customSadImg6k) customSadImg6k.style.display = 'block';
-                document.getElementById('siBtn').style.fontSize = '280px';
-                document.getElementById('siBtn').style.padding = '170px 280px';
-                noButtonState++;
-                break;
-            case 16:
-                document.getElementById('noBtn').innerHTML = '¿De verdad no me quieres nada?';
-                document.getElementById('noBtn').style.backgroundColor = '#F1330A';
-                let customSadImg6l = document.getElementById('customSadImg6');
-                if (customSadImg6l) customSadImg6l.style.display = 'block';
-                document.getElementById('sadGifContainer').style.display = 'none';
-                document.getElementById('sadGifContainer1').style.display = 'none';
-                document.getElementById('sadGifContainer2').style.display = 'none';
-                document.getElementById('gifContainer').style.display = 'block';
-                document.getElementById('happyGifContainer').style.display = 'none';
-                if (customSadImg6l) customSadImg6l.style.display = 'none';
-                noButtonState = 0;
-                break;
-
-            default:
-                // Por si acaso, maneja cualquier otro caso aquí
-                break;
+        
+        // Función para mostrar un gatito aleatorio
+        function showRandomKitten() {
+            const kittensContainer = document.getElementById('kittens');
+            const randomIndex = Math.floor(Math.random() * kittenImages.length);
+            const kitten = kittenImages[randomIndex];
+            
+            // Crear elemento de gatito
+            const kittenCard = document.createElement('div');
+            kittenCard.className = 'kitten-card';
+            
+            const img = document.createElement('img');
+            img.src = kitten.url;
+            img.alt = "Gatito adorable";
+            img.className = "kitten-img";
+            
+            const caption = document.createElement('div');
+            caption.className = 'kitten-caption';
+            caption.textContent = kitten.caption;
+            
+            kittenCard.appendChild(img);
+            kittenCard.appendChild(caption);
+            
+            kittensContainer.appendChild(kittenCard);
+            
+            // Mostrar también un mensaje de ánimo
+            const randomMessageIndex = Math.floor(Math.random() * messages.length);
+            showMessage(randomMessageIndex);
         }
-    });
+        
+        // Función para crear corazones flotantes
+        function createHearts(count) {
+            const heartsContainer = document.getElementById('hearts');
+            
+            for (let i = 0; i < count; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                
+                // Posición aleatoria
+                heart.style.left = Math.random() * 100 + 'vw';
+                
+                // Tamaño aleatorio
+                const size = Math.random() * 20 + 10;
+                heart.style.width = size + 'px';
+                heart.style.height = size + 'px';
+                
+                // Duración de animación aleatoria
+                heart.style.animationDuration = (Math.random() * 5 + 5) + 's';
+                
+                heartsContainer.appendChild(heart);
+                
+                // Eliminar el corazón después de que termine la animación
+                setTimeout(() => {
+                    if (heart.parentNode) {
+                        heart.parentNode.removeChild(heart);
+                    }
+                }, 10000);
+            }
+        }
+        
+        // Inicializar con algunos gatitos
+        window.onload = function() {
+            // Mostrar algunos gatitos iniciales
+            for (let i = 0; i < 3; i++) {
+                showRandomKitten();
+            }
+            
+            // Crear corazones de fondo continuamente
+            setInterval(() => {
+                createHearts(2);
+            }, 3000);
+            
+            // Mostrar un mensaje inicial después de un momento
+            setTimeout(() => {
+                showMessage(0);
+            }, 1000);
+        };
     </script>
-    <script src="script.js"></script>
 </body>
 </html>
